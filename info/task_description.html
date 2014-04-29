@@ -12,7 +12,7 @@
 
 <p>
     <strong>Input:</strong> 
-    A number of dice to roll, <strong>N</strong>, the number of sides on each die, <strong>S</strong>, a target space, <strong>T</strong>, and a list, <strong>B</strong>, containing how many spaces to move (positive for forward, negative for backwards) after landing on that space. You always start from space 0 and the starting and ending squares will not require any further movement after landing on them.
+    A number of dice to roll, <strong>N</strong>, the number of sides on each die, <strong>S</strong>, a target space, <strong>T</strong>, and a list, <strong>B</strong>, containing how many spaces to move (positive for forward, negative for backwards) after landing on that space. You always start from space 0 and the starting and ending squares will not require any further movement after landing on them. Any further movement will move you to a space that does not require further futher movement. 
 </p>
 
 <p>
@@ -45,5 +45,5 @@ checkio(10, 10, 50) == 0.0375
     0 &lt; <strong>T</strong> &lt; len(<strong>B</strong>)<br/>
     4 &le; len(<strong>B</strong>) &le; 30<br/>
     <strong>B</strong>[0] = <strong>B</strong>[<strong>T</strong>] = 0<br/>
-    There are no loops in the required movements
+    <strong>B</strong>[(i + <strong>B</strong>[i]) % len(B)] = 0 for all i
 </p>
