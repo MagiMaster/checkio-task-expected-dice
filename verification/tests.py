@@ -11,7 +11,7 @@ import random
 
 TESTS = {
     "Basics": [],
-    "Small": [],
+    "Jumps": [],
     "Big": []
 }
 
