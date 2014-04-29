@@ -18,5 +18,5 @@ TESTS = {
 def addTest(c, i, a):
     TESTS[c].append({"input": i, "answer": a})
 
-addTest("Basics", [2, 4, 3, [0, 0, 0, 0]], ????)
+addTest("Basics", [1, 4, 3, [0, 0, 0, 0]], ????)
 
