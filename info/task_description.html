@@ -1,27 +1,26 @@
 <p>
-    For this task, you'll be playing some board games.
-    Or rather, you're going to be, but first you'd like to know more about the probabilities involved.
+    For this task, you'll be playing some classic tabletop games.
+    Or rather, you're going to be, but first you'd like to know more about the probabilities involved in dice rolling.
 </p>
 
 <p>
     Many board games fall under the category of "roll and move" games.
     In these games, you roll some dice and move that many spaces forward.
-    In some games, you then move forward or backwards a number of spaces depending on which space you landed on.
+    You might then move forward or backwards a number of spaces depending on which space you land on.
 </p>
 
 <p>
-    You want to work out, given a description of the board and the dice used,
-    what the expected number of moves would be to reach a target square.
-    For this task, all the boards under consideration are circular and when moving off one end you simply continue from
-    the other.
-    A board is represented as a list of integers. Each cell number means
-    how many cells to move (positive for forward, negative for backwards) after landing on that cell.
+    Given a description of the board and the dice used,
+    you want to work out what the expected number of moves would be to reach a target square.
+    For this task, all the boards under consideration are circular and when moving off one end you simply continue from the other.
+    A board is represented as a list of integers.
+    Each cell number means how many cells to move (positive for forward, negative for backwards) after landing on that cell.
     You always start from the first cell (index 0) and
     the starting and target squares will not require any further movement after landing on them.
 </p>
 
 <p>
-    For example. If we have one 4-sided die, the simple board [0,0,0,0] and any target square,
+    For example: If we have one 4-sided die, the simple board [0,0,0,0] and any target square,
     then you have a 1/4 chance of reaching the target on every roll, so on average it will take 4 rolls.
     The result should be given with one digit precision as &plusmn;0.1.
 </p>
